@@ -81,7 +81,7 @@ get '/page_5_results' do
   p "#{uname}name,#{num1}1stnumber,#{num2}2ndnumber,#{eqaz}this is eqaz, #{result}result"
 
 
-  erb :page_5_results, locals: {uname: uname, num1: num1, num2: num2, }
+  erb :page_5_results, locals: {uname: uname, num1: num1, num2: num2,eqaz: eqaz, result: result.to_s }
 end
 
 

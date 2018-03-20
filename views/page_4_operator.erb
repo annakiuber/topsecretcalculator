@@ -1,0 +1,12 @@
+<%=uname%>
+<h1>would you like to add(+), subtract(-), multiply(*), or devide(/) these numbers?<h1>
+<form method="post" action="operator_num">
+	<input type="radio" name="equaz" value="plus">ADD<br>
+	<input type="radio" name="equaz" value="minus">Sub><br>
+	<input type="radio" name="equaz" value="divide">DIV><br>
+	<input type="radio" name="equaz" value="multiply">MULT<br>
+	<input type="hidden" name="num2" value = "<%=num2%>">
+	<input type="hidden" name="num1" value = "<%=num1%>">
+	<input type="hidden" name="uname" value = "<%=uname%>">
+	<input type="submit" value="timbus">
+</form>

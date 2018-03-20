@@ -13,7 +13,11 @@ post "/login" do
   
   if uname == "anna" && password == "fructose01"
         redirect '/first_num?uname='+ uname
-    else 
+      elsif uname == "annabanana" && password == "bananabread"
+        redirect '/first_num?uname='+ uname
+      elsif uname == "bananapeelz" && password == "bananabread01"
+        redirect '/first_num?uname='+ uname 
+       else 
       error_msg = "Wrong Username or Password:"
         erb :error, locals: {uname: uname}
     end
